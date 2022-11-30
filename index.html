@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                // fontSize: {
+                //     'font-size': '40px',
+                //     'font-sizee': '20px',
+                //     'xsm-size': '30px',
+                //     'xsm-siz': '14px',
+                // },
+                extend: {
+                    backgroundImage: {
+                        'number-sub': "url('./image/soya.png')",
+                    },
+                    lineHeight: {
+                        line: '130%'
+                    },
+                    fontSize: {
+                        fonsize40: '40px',
+                        'font-size': '40px',
+                        'font-sizee': '20px',
+                        'xsm-size': '30px',
+                        xsm: '14px',
+                    },
+                    maxWidth: {
+                        'max-w': '701px',
+                        'max-div': '280px',
+                        'max-p': '200px',
+                    },
+                    screens: {
+                        xsm: '300px',
+                        sm: '600px',
+                        lg: '900px',
+                        xl: '1140px',
+
+                    },
+                    borderRadius: {
+                        raduis15: '15px'
+                    },
+                    container: {
+
+                        screens: {
+                            xsm: '300px',
+                            sm: '600px',
+                            lg: '900px',
+                            xl: '1140px',
+
+                        },
+                        padding: {
+                            xsm: '10px',
+                            sm: '20px',
+                            lg: '30px',
+                            xl: '20px',
+                        },
+                    },
+                    colors: {
+                        primary: '#7872B9',
+                        secondary: '#4D4D52',
+                        second1: '#F9FCFF',
+                        second2: '#D7C3E6',
+                        'bg-fly': '#EBF5FF',
+                        'bg-simple': '#F1E6F7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-family">
+    <header>
+        <div class="container mx-auto flex  justify-between items-center pt-16">
+            <div>
+                <img src="./image/logooooooo.png" alt="thi is logo" width="170" height="44">
+            </div>
+            <nav class="xsm:hidden xl:block">
+                <ul class="flex gap-x-16 font-semibold ">
+                    <li><a href="./index.html">О нас</a></li>
+                    <li><a href="./index.html">Тарифы</a></li>
+                    <li><a href="./index.html">Психологам</a></li>
+                    <li><a href="./index.html">Материалы</a></li>
+                </ul>
+            </nav>
+            <div class="relative">
+                <button
+                    class="py-4 text-primary px-20 rounded-xl border-2 border-solid border-primary sm:block xsm:hidden ">Личный
+                    кабинет</button>
+                <div>
+                    <img src="./image/menyu-3.svg" alt="menyu" class="sm:hidden">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-second1 pb-32">
+            <div class="container mx-auto">
+                <div class="justify-between grid  lg:grid-cols-2 xsm:grid-cols-1 ">
+                    <div class="pt-28 max-w-max-w ">
+                        <h1 class="text-fonsize40 text-primary font-extrabold leading-line">Выберите количество сессий,
+                            которое вы хотите оплатить. </h1>
+                        <p class="text-2xl text-secondary mt-5">Оплачивая пакет от 4 сессий вы получаете <br> доступ к
+                            приложению.</p>
+                        <button class=" py-6 bg-primary text-white mt-16 font-bold px-28 rounded-2xl">Узнать
+                            больше</button>
+                    </div>
+                    <div class="pt-24">
+                        <img src="./image/salon.png" alt="this is stayle" width="479" height="376">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto">
+                <div class="flex justify-center">
+                    <h2 class="text-font-size text-primary font-extrabold">Тарифы</h2>
+                </div>
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 gap-x-5 gap-y-10 mt-20">
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">1 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 900₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 2
+                                900₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8 hidden">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 1 200₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">4 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 800₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 11
+                                200₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple  justify-center py-3 mx-10 rounded-xl hidden">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium pt-16">выгода 400₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">8 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 750₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 22
+                                000₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 1 200₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">16 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 690₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 43
+                                040₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 3 360₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">32 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 750₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 2
+                                550₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 11 200₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">64 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 490₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 15
+                                360₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 26 240₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">96 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 320₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 22
+                                720₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 55 680₽</h3>
+                        </div>
+                    </div>
+                    <div class="max-w-max-div bg-second1 ">
+                        <div class="bg-bg-fly rounded-t-2xl">
+                            <h4 class="flex justify-center py-4 font-medium">128 сесий</h4>
+                        </div>
+                        <div>
+                            <h5 class=" pt-5 text-primary flex justify-center text-2xl font-bold">2 200₽</h5>
+                            <p class="text-primary flex justify-center text-xl  font-medium">за сессию</p>
+                        </div>
+                        <div class="flex justify-center mt-6 rounded-3xl">
+                            <button class="py-3 bg-primary text-white  font-bold px-16 rounded-2xl"> Оплатить <br> 28
+                                600₽ </button>
+                        </div>
+                        <div class="mt-5 pb-8">
+                            <h3 class="bg-bg-simple flex justify-center py-3 mx-10 rounded-xl">В рассрочку</h3>
+                            <h3 class="flex justify-center mt-6 text-primary text-lg font-medium">выгода 89 600₽</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-16">
+                <form action="https://echo.htmlacademy.ru">
+                    <label for="password"></label>
+                    <input class="border-2 border-solid border-primary py-3 px-10 text-lg rounded-xl" name="password"
+                        type="password" id="password" placeholder="Введите промокод"> <br>
+                    <button
+                        class="mt-9 py-6 bg-primary px-24 rounded-xl text-white font-bold flex justify-center items-center">Отправить</button>
+                </form>
+            </div>
+            <div class="bg-second1 mt-28">
+                <div class="container mx-auto pb-32 grid gap-x-24 lg:grid-cols-2 xsm:grid-cols-1">
+                    <div>
+                        <h2 class="pt-32 text-primary  font-extrabold text-font-size ">Оплачивая пакет от 4 сессий</h2>
+                        <p class="text-font-sizee  pt-5 text-secondary">мы дарим доступ к приложению <br> с виртуальным
+                            психологом.</p>
+                        <div class="mt-9  gap-y-14">
+                            <div class="flex gap-x-8 gap-y-14">
+                                <div><img src="./image/sarwqqq.png" alt="this is stayle"></div>
+                                <div>
+                                    <p>Прорабатывайте себя с помощью <br> упражнений и аудиопрактик</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-8">
+                                <div><img src="./image/sarwqqq.png" alt="this is stayle"></div>
+                                <div>
+                                    <p>Ведите личный дневник настроения <br> и получайте подробную статистику о себе</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-x-8">
+                                <div><img src="./image/sarwqqq.png" alt="this is stayle"></div>
+                                <div>
+                                    <p>Расскажите виртуальному психологу о своих <br> чувствах и он подберет актуальный
+                                        материал</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mt-14 py-6 bg-primary px-14 rounded-xl text-white font-bold">Доступно в App
+                            Store</button>
+                    </div>
+                    <div class="flex">
+                        <div class="pt-32">
+                            <img src="./image/tel22.png" alt="telefon">
+                        </div>
+                        <div class="pt-44">
+                            <img src="./image/tellllll.png" alt="telefon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-second1">
+                <div class="container mx-auto grid lg:grid-cols-2 xsm:grid-cols-1 py-32 gap-x-20">
+                    <div>
+                        <h3 class="text-2xl  font-semibold">Реферальная программа</h3>
+                        <h2 class="text-font-size text-primary font-extrabold">Позаботьтесь о других</h2>
+                        <p class="mt-5 text-lg">
+                            С помощью реферальной программы вы можете приглашать своих друзей по вашей индивидуальной
+                            ссылке
+                            и получать 500 рублей за каждого, кто пройдет первую сессию.
+                            Деньги поступают на ваш баланс, с которого вы можете оплачивать сесии.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./image/family.png" alt="this is family" width="420" height="401">
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto">
+                <div>
+                    <h2
+                        class="flex justify-center lg:text-font-size text-primary font-extrabold xsm:text-xsm-size xsm:text-center">
+                        Как происходит программа</h2>
+                </div>
+                <div class="grid lg:grid-cols-5 xsm:grid-cols-1 items-center pb-28">
+                    <div class="bg-number-sub  bg-no-repeat mt-20 mx-auto">
+                        <div class="">
+                            <img src="./image/1.png" alt="soya">
+                        </div>
+                        <div class="max-w-max-p text-center -ml-12">
+                            <p class="py-5">Копируете и отправляете личную реферальную ссылку</p>
+                        </div>
+                    </div>
+                    <div class="lg:block xsm:hidden">
+                        <img src="./image/sariq1.png" alt="stayle" width="132" height="81">
+                    </div>
+                    <div class="bg-number-sub  bg-no-repeat mt-20 mx-auto">
+                        <div class="">
+                            <img src="./image/2.png" alt="soya">
+                        </div>
+                        <div class="max-w-max-p text-center -ml-12 ">
+                            <p class="py-5">Ваш друг переходит и регистируется по ней</p>
+                        </div>
+                    </div>
+                    <div class="lg:block xsm:hidden">
+                        <img src="./image/sariq2.png" alt="stayle" width="132" height="81">
+                    </div>
+                    <div class="bg-number-sub  bg-no-repeat mt-20 mx-auto">
+                        <div class="">
+                            <img src="./image/3.png" alt="soya">
+                        </div>
+                        <div class="max-w-max-p text-center -ml-12">
+                            <p class="py-5">Проходит первую сессию, вы получаете бонус на баланс</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container mx-auto grid lg:grid-cols-5 text-center xsm:grid-cols-1">
+            <div class="mx-auto">
+                <div><img src="./image/logooooooo.png" alt="logo"></div>
+                <div class="flex gap-x-8 mt-10">
+                    <div class="w-10 h-10 bg-second2 hover:bg-black rounded-full flex justify-center items-center ">
+                        <a href="./index.html"><img src="./image/ugl.svg" alt="ikon" width="27" height="16"></a>
+                    </div>
+                    <div class="w-10 h-10 bg-second2  hover:bg-black rounded-full flex justify-center items-center">
+                        <a href="./index.html"><img src="./image/teleh.svg" alt="ikon" width="25" height="25"></a>
+                    </div>
+                    <div class="w-10 h-10 bg-second2  hover:bg-black  rounded-full flex justify-center items-center">
+                        <a href="./index.html"><img src="./image/ww.svg" alt="ikon" width="40" height="40"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <p class="text-xsm font-normal">Сотрудничество</p>
+                <h5 class="text-lg text-primary font-semibold mt-2">@youmiwork</h5>
+                <p class="mt-5  text-xsm ">Поддержка клиентов</p>
+                <h5  class="text-lg text-primary font-semibold mt-2">@youmi</h5>
+            </div>
+            <div class="text-primary text-lg mx-auto font-semibold">
+                <h4  class="pb-3">О нас</h4>
+                <h4  class="py-3">Тарифы</h4>
+                <h4  class="py-3">Психологам</h4>
+            </div>
+            <div class="text-primary text-lg mx-auto font-semibold">
+                <h4  class="pb-3">Блог</h4>
+                <h4  class="py-3">Вопрос - ответ</h4>
+                <h4  class="py-3">Контакты</h4>
+            </div>
+            <div class="text-sm mx-auto font-normal">
+                <h4  class="pb-3">Обработка персональных данных</h4>
+                <h4  class="py-2">Пользовательское соглашение</h4>
+                <h4  class="py-2">Юридические документы</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
